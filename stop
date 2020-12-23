@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+echo '[gh0st_dev] - stop Dev Space Docker'
+docker-compose stop
+

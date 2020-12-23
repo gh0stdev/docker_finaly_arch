@@ -1,0 +1,14 @@
+version: '3.3'
+services:
+  kib7.5:
+    image: docker.elastic.co/kibana/kibana:7.5.2
+    container_name: kib7.5
+    deploy:
+      resources:
+        limits:
+          memory: 4000M
+    ports:
+      - 5601:5601
+    environment:
+      ELASTICSEARCH_URL: http://es7.5:9200
+      ELASTICSEARCH_HOSTS: http://es7.5:9200
